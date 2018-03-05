@@ -1,13 +1,18 @@
 package com.helloSpringBoot;
-import globalWeather.wsdl.GetCitiesByCountryResponse;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
 
-@Controller
-public class RestController {
-    @Autowired
+import globalWeather.wsdl.GetCitiesByCountryResponse;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class SoapRestController {
+
     CitiesByCountry citiesByCountry;
+
+    public SoapRestController(CitiesByCountry citiesByCountry) {
+        this.citiesByCountry = citiesByCountry;
+    }
+
     @GetMapping("/hello")
     public GetCitiesByCountryResponse sayHello(){
         GetCitiesByCountryResponse response = citiesByCountry.getCitiesByCountry();
