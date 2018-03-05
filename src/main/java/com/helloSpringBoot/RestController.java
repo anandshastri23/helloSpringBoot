@@ -1,4 +1,4 @@
-package com.helloSpringBoot.basics.helloSpringBoot;
+package com.helloSpringBoot;
 import globalWeather.wsdl.GetCitiesByCountryResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

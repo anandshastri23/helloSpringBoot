@@ -1,4 +1,4 @@
-package com.helloSpringBoot.basics.helloSpringBoot;
+package com.helloSpringBoot;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

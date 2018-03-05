@@ -1,4 +1,4 @@
-package com.helloSpringBoot.basics.helloSpringBoot;
+package com.helloSpringBoot;
 
 import globalWeather.wsdl.GetCitiesByCountry;
 import globalWeather.wsdl.GetCitiesByCountryResponse;
