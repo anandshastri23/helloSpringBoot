@@ -68,7 +68,7 @@ dependencies {
 	compile("org.springframework.boot:spring-boot-starter")
     compile("org.springframework.ws:spring-ws-core")
 	compile(files(genJaxb.classesDir).builtBy(genJaxb))
-
+	compile("org.springframework.boot:spring-boot-devtools")
 	jaxb "com.sun.xml.bind:jaxb-xjc:2.1.7"
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }
